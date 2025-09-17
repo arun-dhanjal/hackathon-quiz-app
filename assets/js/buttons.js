@@ -5,7 +5,7 @@ initialiseButtons();
 /* Get all buttons and add event listeners to them */
 function initialiseButtons() {
     let buttons;
-    buttons = buttonIDs.map(id => document.getElementById(id));
+    buttons = globals.buttonIDs.map(id => document.getElementById(id));
     buttons.forEach(addClickListener);
 }
 
@@ -15,12 +15,13 @@ function addClickListener(item) {
     });
 }
 
-/* TODO Need to add passing the result to the appropriate receiver */
+/* Pass the index of the button to check the answer */
 function buttonClicked(buttonID) {
-    let result = buttonIDs.indexOf(buttonID); 
+    let result = globals.buttonIDs.indexOf(buttonID); 
     checkAnswer(result);
 }
 
+/* TODO : Increment the score */ 
 function checkAnswer(selectedAnswer)
 {
     if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
