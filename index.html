@@ -20,14 +20,16 @@
             <!-- h1 element represents the question text -->
             <h1 id="question">Question loading...</h1>
 
-            <div id="answers" class="text-start mt-3">
-                <ol>
-                    <li id="answer1" class="answer">Answer 1 loading...</li>
-                    <li id="answer2" class="answer">Answer 2 loading...</li>
-                    <li id="answer3" class="answer">Answer 3 loading...</li>
-                    <li id="answer4" class="answer">Answer 4 loading...</li>
-                </ol>
-            </div>
+                <div id="answers" class="row justify-content-center mt-3">
+                    <div class="col-6 text-start">
+                        <ol>
+                            <li id="answer1" class="answer">Answer 1 loading...</li>
+                            <li id="answer2" class="answer">Answer 2 loading...</li>
+                            <li id="answer3" class="answer">Answer 3 loading...</li>
+                            <li id="answer4" class="answer">Answer 4 loading...</li>
+                        </ol>
+                    </div>
+                </div>
 
             <!-- 4 buttons that will each pull the appropriate question text from JS file -->
             <div class="container mt-3" id="answer-buttons">
@@ -72,8 +74,9 @@
      <script src="assets/js/globals.js"></script>
      <script src="assets/js/score.js"></script>
      <script src="assets/js/buttons.js"></script>
+
+    <!-- question-logic.js -->
      <script src="assets/js/question-logic.js"></script>
-     
 </body>
 
 </html>
