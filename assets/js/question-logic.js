@@ -1,3 +1,8 @@
+// Setting DOM elements
+let questionElement = document.querySelector("#question");
+let answerElements = document.querySelectorAll(".answer");
+
+// Set Questions
 let questions = [
     {
         question: "What is the capital of France?",
@@ -25,35 +30,16 @@ let questions = [
         answer: 1
     }
 ];
-
-let currentQuestionIndex = 0;
 let totalNumberOfQuestions = questions.length;
+
+// Question Functions
 /**
- * Loads current question depending on question number
- * @param {*} currentQuestionIndex 
+ * Loads and displays the next question if the index is within range.
+ * Throws an error and alerts the user if the index exceeds the total number of questions.
+ *
+ * @param {number} currentQuestionIndex - The index of the question to load.
  */
-function loadQuestion(currentQuestionIndex) {
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionText = currentQuestion["question"];
-    let answer1 = currentQuestion["choices"][0];
-    let answer2 = currentQuestion["choices"][1];
-    let answer3 = currentQuestion["choices"][2];
-    let answer4 = currentQuestion["choices"][3];
-    
-    ////////////////////////////////////////////////////////////////////////
-    // WIP structure wise, depending on HTML elements, basically pseudocode
-    ////////////////////////////////////////////////////////////////////////
-    let question = `
-    Question ${currentQuestionIndex}: ${questionText}
-
-    1: ${answer1}
-    2: ${answer2}
-    3: ${answer3}
-    4: ${answer4}
-    `
-}
-
-function nextQuestion() {
+function nextQuestion(currentQuestionIndex) {
     if (currentQuestionIndex < totalNumberOfQuestions) {
         loadQuestion(currentQuestionIndex);
     } else {
@@ -61,3 +47,29 @@ function nextQuestion() {
         throw(`Tried to display question number ${currentQuestionIndex+1}, but there are only ${totalNumberOfQuestions} questions!`);
     }
 }
+
+/**
+ * Displays the question and its answer choices for the given index.
+ * Updates the DOM to show the current question and possible answers.
+ * 
+ * @param {number} currentQuestionIndex - The index of the question to display.
+ */
+function loadQuestion(currentQuestionIndex) {
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionText = currentQuestion["question"];
+    let answers = currentQuestion["choices"]
+    
+    questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
+    let answerIndex = 0;
+    let answerLetter = ["A", "B", "C", "D"]
+    for (let answerElement of answerElements) {
+        answerElement.innerHTML = `${answerLetter[answerIndex]}: ${answers[answerIndex]}`;
+        answerIndex++;
+    }
+}
+
+let currentQuestionIndex = 0;
+function runGame() {
+    nextQuestion(0)
+}
+runGame()
