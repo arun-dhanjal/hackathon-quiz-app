@@ -10,21 +10,19 @@ function initialiseButtons() {
 }
 
 function addClickListener(item) {
-    item.addEventListener("click", function() {
+    item.addEventListener("click", function () {
         buttonClicked(item.id);
     });
 }
 
-/* Pass the index of the button to check the answer */
+/* Pass the index of the button to check the answer and go to the next question */
 function buttonClicked(buttonID) {
-    let result = globals.buttonIDs.indexOf(buttonID); 
+    let result = globals.buttonIDs.indexOf(buttonID);
     checkAnswer(result);
+    nextQuestion(++currentQuestionIndex);
 }
 
-/* TODO : Increment the score */ 
-function checkAnswer(selectedAnswer)
-{
-    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
-        alert("Correct!");}
-        nextQuestion(++currentQuestionIndex);
+/*Check if the answer is correct */
+function checkAnswer(selectedAnswer) {
+    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) incrementScore();
 }
