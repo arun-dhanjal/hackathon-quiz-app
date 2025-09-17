@@ -1,6 +1,7 @@
 // Setting DOM elements
 let questionElement = document.querySelector("#question");
 let answerElements = document.querySelectorAll(".answer");
+let scoreElement = document.getElementById('score');
 
 // Set Questions
 let questions = [
@@ -59,6 +60,9 @@ function loadQuestion(currentQuestionIndex) {
     let questionText = currentQuestion["question"];
     let answers = currentQuestion["choices"]
     
+    // Update score to show current question number
+    updateScoreNumber(currentQuestionIndex);
+    
     questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
     let answerIndex = 0;
     let answerLetter = ["A", "B", "C", "D"]
@@ -66,6 +70,11 @@ function loadQuestion(currentQuestionIndex) {
         answerElement.innerHTML = `${answerLetter[answerIndex]}: ${answers[answerIndex]}`;
         answerIndex++;
     }
+}
+
+function updateScoreNumber(currentQuestionIndex) {
+    const questionNumber = currentQuestionIndex + 1;
+    scoreElement.textContent = questionNumber;
 }
 
 let currentQuestionIndex = 0;
