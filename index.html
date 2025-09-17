@@ -15,30 +15,43 @@
 <body class="d-flex justify-content-center align-items-center vh-100">
 
     <!-- Quiz container (Arun dealing with this) -->
-    <div class="container mt-5 text-center">
-        <div id="quiz-card" class="card p-4">
-        <!-- h4 element represents the question text -->
-        <h1 id="question">Loading question...</h1>
-        <div id="answers" class="text-start">
-            <ol>
-                <li id="answer1" class="answer">1</li>
-                <li id="answer2" class="answer">1</li>
-                <li id="answer3" class="answer">1</li>
-                <li id="answer4" class="answer">1</li>
-            </ol>
-        </div>
-        <div>
-            <!-- 4 buttons that will each pull the appropriate question text from JS file -->
-            <div class="mt-3" id="answer-buttons">
-                <button class="btn btn-outline-secondary m-2" id="btnA">A</button>
-                <button class="btn btn-outline-secondary m-2" id="btnB">B</button>
-                <button class="btn btn-outline-secondary m-2" id="btnC">C</button>
-                <button class="btn btn-outline-secondary m-2" id="btnD">D</button>
+    <div class="container text-center">
+        <div id="quiz-card" class="card p-3">
+            <!-- h1 element represents the question text -->
+            <h1 id="question">Loading question...</h1>
+
+            <div id="answers" class="text-start mt-3">
+                <ol>
+                    <li id="answer1" class="answer">1</li>
+                    <li id="answer2" class="answer">1</li>
+                    <li id="answer3" class="answer">1</li>
+                    <li id="answer4" class="answer">1</li>
+                </ol>
             </div>
+
+            <!-- 4 buttons that will each pull the appropriate question text from JS file -->
+            <div class="container mt-3" id="answer-buttons">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
+                    <div class="col">
+                        <button class="btn btn-outline-secondary w-100" id="btnA">A</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary w-100" id="btnB">B</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary w-100" id="btnC">C</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-secondary w-100" id="btnD">D</button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Score div with "score" span element, to be updated via JS file dependent on answer input -->
             <div class="mt-3">
                 <p>Score: <span id="score">0</span>/5</p>
             </div>
+
         </div>
     </div>
   
