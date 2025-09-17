@@ -1,0 +1,27 @@
+/* Background styling */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Removes list numbering */
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Button styling */
+#btnA {
+    background-color: #CEE7CA;
+}
+
+#btnB {
+    background-color: #BDDFE3;
+}
+
+#btnC {
+    background-color: #F1C0BA;
+}
+
+#btnD {
+    background-color: #FBECC0;
+}
