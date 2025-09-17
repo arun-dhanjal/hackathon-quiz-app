@@ -1,6 +1,7 @@
 /* Background styling */
 body {
-  background-color: #f8f9fa;
+    color: black;
+    background-color: #f8f9fa;
 }
 
 /* Removes list numbering */
@@ -10,6 +11,11 @@ ol {
 }
 
 /* Button styling */
+
+#answer-buttons * {
+    font-weight: 500;
+    color: black;
+}
 #btnA {
     background-color: #CEE7CA;
 }
@@ -52,3 +58,17 @@ ol {
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
+
+/* grid visualisation */
+/* .container {
+    border: solid black 5px;
+}
+
+.row {
+    border: solid red 5px;
+}
+
+.col-6 {
+    border: solid green 5px;
+} */
