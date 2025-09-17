@@ -33,6 +33,7 @@ ol {
 }
 
 .progress-bar {
+  width: 0%;
   background-color: #f1c0ba;
 }
 

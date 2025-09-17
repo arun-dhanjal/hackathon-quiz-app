@@ -77,7 +77,7 @@ function updateScoreNumber(currentQuestionIndex) {
     const questionNumber = currentQuestionIndex + 1;
     scoreElement.textContent = questionNumber;
     
-    // Update progress bar based on score
+    // Update progress bar based on Question Number
     updateProgressBar(questionNumber);
 }
 
