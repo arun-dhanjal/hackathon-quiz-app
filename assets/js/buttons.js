@@ -18,4 +18,12 @@ function addClickListener(item) {
 /* TODO Need to add passing the result to the appropriate receiver */
 function buttonClicked(buttonID) {
     let result = buttonIDs.indexOf(buttonID); 
+    checkAnswer(result);
+}
+
+function checkAnswer(selectedAnswer)
+{
+    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
+        alert("Correct!");}
+        nextQuestion(++currentQuestionIndex);
 }
