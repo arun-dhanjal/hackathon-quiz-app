@@ -14,11 +14,20 @@
 <!-- Bootstrap classes applied to entire body element to center quiz container horizontally and vertically -->
 <body class="d-flex justify-content-center align-items-center vh-100">
 
-    <!-- Quiz container -->
+    <!-- Quiz container (Arun dealing with this) -->
     <div class="container mt-5 text-center">
         <div id="quiz-card" class="card p-4">
         <!-- h4 element represents the question text -->
-        <h4 id="question">Loading question...</h4>
+        <h1 id="question">Loading question...</h1>
+        <div id="answers" class="text-start">
+            <ol>
+                <li id="answer1">1</li>
+                <li id="answer2">1</li>
+                <li id="answer3">1</li>
+                <li id="answer4">1</li>
+            </ol>
+        </div>
+        <div>
             <!-- 4 buttons that will each pull the appropriate question text from JS file -->
             <div class="mt-3" id="answer-buttons">
                 <button class="btn btn-outline-primary m-2" id="btnA">A</button>
@@ -33,17 +42,8 @@
         </div>
     </div>
   
-    <!-- Results modal that shows up when all questions have been answered -->
-    <div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content text-center p-4">
-            <h5 class="modal-title" id="resultModalLabel">Quiz Complete!</h5>
-            <!--  -->
-            <p id="finalScore" class="mt-3"></p>
-            <button type="button" class="btn btn-success mt-2" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+    <!-- Results modal (Mark dealing with this) -->
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
