@@ -2,6 +2,7 @@
 let questionElement = document.querySelector("#question");
 let answerElements = document.querySelectorAll(".answer");
 let scoreElement = document.getElementById('score');
+let progressBarElement = document.querySelector('.progress-bar');
 
 // Set Questions
 let questions = [
@@ -75,6 +76,37 @@ function loadQuestion(currentQuestionIndex) {
 function updateScoreNumber(currentQuestionIndex) {
     const questionNumber = currentQuestionIndex + 1;
     scoreElement.textContent = questionNumber;
+    
+    // Update progress bar based on score
+    updateProgressBar(questionNumber);
+}
+
+function updateProgressBar(score) {
+    switch(score) {
+        case 1:
+            progressBarElement.style.width = '20%';
+            progressBarElement.setAttribute('aria-valuenow', '1');
+            break;
+        case 2:
+            progressBarElement.style.width = '40%';
+            progressBarElement.setAttribute('aria-valuenow', '2');
+            break;
+        case 3:
+            progressBarElement.style.width = '60%';
+            progressBarElement.setAttribute('aria-valuenow', '3');
+            break;
+        case 4:
+            progressBarElement.style.width = '80%';
+            progressBarElement.setAttribute('aria-valuenow', '4');
+            break;
+        case 5:
+            progressBarElement.style.width = '100%';
+            progressBarElement.setAttribute('aria-valuenow', '5');
+            break;
+        default:
+            progressBarElement.style.width = '0%';
+            progressBarElement.setAttribute('aria-valuenow', '0');
+    }
 }
 
 let currentQuestionIndex = 0;
