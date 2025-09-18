@@ -27,7 +27,9 @@ ol {
   color: #505050;
   border-radius: 10px;
   border-color: #505050;
+  transition: all 1.0s ease;
 }
+
 #btnA {
   background-color: #BEE5B0;
 }
