@@ -42,6 +42,8 @@ let totalNumberOfQuestions = questions.length;
 function nextQuestion(currentQuestionIndex) {
     if (currentQuestionIndex < totalNumberOfQuestions) {
         loadQuestion(currentQuestionIndex);
+    } else if (currentQuestionIndex = totalNumberOfQuestions) {
+        modal.show();
     } else {
         alert(`Tried to display question number ${currentQuestionIndex+1}, but there are only ${totalNumberOfQuestions} questions!`);
         throw(`Tried to display question number ${currentQuestionIndex+1}, but there are only ${totalNumberOfQuestions} questions!`);
