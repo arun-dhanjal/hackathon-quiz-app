@@ -16,7 +16,7 @@
 
   <!-- Bootstrap classes applied to entire body element to center quiz container horizontally and vertically -->
   <body class="d-flex justify-content-center align-items-center vh-100">
-    <!-- Quiz container (Arun dealing with this) -->
+    <!-- Quiz container -->
     <div class="container text-center">
       <div id="quiz-card" class="card p-3">
         <!-- h1 element represents the question text -->
@@ -76,20 +76,24 @@
       </div>
     </div>
 
-    <!-- Results modal (Mark dealing with this) -->
     <!-- Modal Container -->
-    <div
-      id="gameModal"
-      class="modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modalTitle"
-      aria-describedby="modalDesc"
-    >
-      <div class="modal-content">
-        <h2 id="modalTitle">🎉 Game Over!</h2>
-        <p id="modalDesc">Well done! You’ve completed the challenge.</p>
-        <button id="closeModal">Play Again</button>
+    <div id="gameModal" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <h1>Congratulations!</h1>
+            <p>You got <span id="finalScore">x</span> questions correct!</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -103,6 +107,7 @@
     <script src="assets/js/globals.js"></script>
     <script src="assets/js/score.js"></script>
     <script src="assets/js/buttons.js"></script>
+    <script src="assets/js/modal.js"></script>
 
     <!-- question-logic.js -->
     <script src="assets/js/question-logic.js"></script>
