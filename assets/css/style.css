@@ -1,7 +1,9 @@
 /* Background styling */
 body {
-  color: black;
-  background-color: #f8f9fa;
+  color: #505050;
+  /*background-color: #E6E6FA;*/
+  background-image: linear-gradient(180deg, #B6E9FF 50%, #BEE5B0 );
+  font-family: "Quicksand", sans-serif;
 }
 
 /* Removes list numbering */
@@ -10,11 +12,19 @@ ol {
   padding-left: 0;
 }
 
+#quiz-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-color: #F08080;
+  background-color: white;
+  color: #505050;
+}
+
 /* Button styling */
 
 #answer-buttons * {
   font-weight: 500;
-  color: black;
+  color: #505050;
 }
 #btnA {
   background-color: #cee7ca;
