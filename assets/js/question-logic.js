@@ -1,7 +1,8 @@
 // Setting DOM elements
 let questionElement = document.querySelector("#question");
 let answerElements = document.querySelectorAll(".answer");
-
+let progressBarElement = document.querySelector('.progress-bar');
+let trackQuestionNumberElement = document.getElementById('trackquestionnumber');
 // Set Questions
 let questions = [
     {
@@ -62,12 +63,51 @@ function loadQuestion(currentQuestionIndex) {
     let questionText = currentQuestion["question"];
     let answers = currentQuestion["choices"]
     
+    // Update question tracker to show current question number
+    updateQuestionTracker(currentQuestionIndex);
+    
     questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
     let answerIndex = 0;
     let answerLetter = ["A", "B", "C", "D"]
     for (let answerElement of answerElements) {
         answerElement.innerHTML = `${answerLetter[answerIndex]}: ${answers[answerIndex]}`;
         answerIndex++;
+    }
+}
+
+function updateQuestionTracker(currentQuestionIndex) {
+    let questionNumber = currentQuestionIndex + 1;
+    trackQuestionNumberElement.textContent = questionNumber;
+    
+    // Update progress bar based on Question Number
+    updateProgressBar(questionNumber);
+}
+
+function updateProgressBar(questionNumber) {
+    switch(questionNumber) {
+        case 1:
+            progressBarElement.style.width = '20%';
+            progressBarElement.setAttribute('aria-valuenow', '1');
+            break;
+        case 2:
+            progressBarElement.style.width = '40%';
+            progressBarElement.setAttribute('aria-valuenow', '2');
+            break;
+        case 3:
+            progressBarElement.style.width = '60%';
+            progressBarElement.setAttribute('aria-valuenow', '3');
+            break;
+        case 4:
+            progressBarElement.style.width = '80%';
+            progressBarElement.setAttribute('aria-valuenow', '4');
+            break;
+        case 5:
+            progressBarElement.style.width = '100%';
+            progressBarElement.setAttribute('aria-valuenow', '5');
+            break;
+        default:
+            progressBarElement.style.width = '0%';
+            progressBarElement.setAttribute('aria-valuenow', '0');
     }
 }
 
