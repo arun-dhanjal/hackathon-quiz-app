@@ -24,7 +24,7 @@ function buttonClicked(buttonID) {
 
 /*Check if the answer is correct */
 function checkAnswer(selectedAnswer) {
-    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
+    if (selectedAnswer === questions[globals.currentQuestionIndex]["answer"]) {
         incrementScore();
         globals.correctSound.play();
     }   else {
