@@ -111,7 +111,6 @@ function updateProgressBar(questionNumber) {
     }
 }
 
-let currentQuestionIndex = 0;
 function runGame() {
     nextQuestion(0)
 }
