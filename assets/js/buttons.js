@@ -19,7 +19,7 @@ function addClickListener(item) {
 function buttonClicked(buttonID) {
     let result = globals.buttonIDs.indexOf(buttonID);
     checkAnswer(result);
-    nextQuestion(++currentQuestionIndex);
+    nextQuestion(++globals.currentQuestionIndex);
 }
 
 /*Check if the answer is correct */
@@ -27,7 +27,8 @@ function checkAnswer(selectedAnswer) {
     if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
         incrementScore();
         globals.correctSound.play();
-    }   else {
-        globals.wrongSound.play();}
+    } else {
+        globals.wrongSound.play();
+    }
 
 }
