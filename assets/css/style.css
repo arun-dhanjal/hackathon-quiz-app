@@ -32,16 +32,40 @@ ol {
   background-color: #BEE5B0;
 }
 
+#btnA:hover {
+  background-color: white;
+  color: #BEE5B0;
+  border-color: #BEE5B0;
+}
+
 #btnB {
   background-color: #B6E9FF;
+}
+
+#btnB:hover {
+  background-color: white;
+  color: #B6E9FF;
+  border-color: #B6E9FF;
 }
 
 #btnC {
   background-color: #f1c0ba;
 }
 
+#btnC:hover {
+  background-color: white;
+  color: #f1c0ba;
+  border-color: #f1c0ba;
+}
+
 #btnD {
   background-color: #fbecc0;
+}
+
+#btnD:hover {
+  background-color: white;
+  color: #fbecc0;
+  border-color: #fbecc0;
 }
 
 /* Progress bar styling */
