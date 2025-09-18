@@ -19,21 +19,10 @@
 <body class="d-flex justify-content-center align-items-center vh-100">
     <!-- Quiz container -->
     <div class="container text-center">
-      <h1 class="mb-4">Hackathon Quiz!</h1>
-      <div id="quiz-card" class="card p-3">
-        <!-- h1 element represents the question text -->
-        <h1 id="question">Question loading...</h1>
-
-        <div id="answers" class="row justify-content-center mt-3">
-          <div class="col-6 text-start">
-            <ol>
-              <li id="answer1" class="answer">Answer 1 loading...</li>
-              <li id="answer2" class="answer">Answer 2 loading...</li>
-              <li id="answer3" class="answer">Answer 3 loading...</li>
-              <li id="answer4" class="answer">Answer 4 loading...</li>
-            </ol>
-          </div>
-        </div>
+        <h1 class="mb-4">Hackathon Quiz!</h1>
+        <div id="quiz-card" class="card p-3">
+            <!-- h1 element represents the question text -->
+            <h1 id="question">Question loading...</h1>
 
             <div id="answers" class="row justify-content-center mt-3">
                 <div class="col-6 text-start">
@@ -100,15 +89,16 @@
 
     <!-- Modal Container -->
     <div id="gameModal" class="modal" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <h1>Congratulations!</h1>
-            <p>You got <span id="finalScore">x</span> questions correct!</p>
-          </div>
-          <div class="modal-footer justify-content-center">
-            <button id="replayButton" type="button" class="btn btn-success">Replay</button>
-          </div>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h1>Congratulations!</h1>
+                    <p>You got <span id="finalScore">x</span> questions correct!</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button id="replayButton" type="button" class="btn btn-success">Replay</button>
+                </div>
+            </div>
         </div>
     </div>
 
