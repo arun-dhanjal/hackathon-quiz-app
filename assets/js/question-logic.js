@@ -66,7 +66,7 @@ function loadQuestion(currentQuestionIndex) {
     // Update question tracker to show current question number
     updateQuestionTracker(currentQuestionIndex);
     
-    questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
+    questionElement.innerHTML = `${questionText}`;
     let answerIndex = 0;
     let answerLetter = ["A", "B", "C", "D"]
     for (let answerElement of answerElements) {
