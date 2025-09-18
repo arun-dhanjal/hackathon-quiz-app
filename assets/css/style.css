@@ -32,7 +32,19 @@ ol {
   background-color: #fbecc0;
 }
 
+/* Progress bar styling */
+
 .progress-bar {
   width: 0%;
-  background-color: #f1c0ba;
+  background-color: #bddfe3;
+}
+.progress {
+  position: relative;
+  margin-left: 16px;
+}
+
+.progress-number {
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 10;
 }
