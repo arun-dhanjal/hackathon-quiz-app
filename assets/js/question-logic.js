@@ -43,7 +43,7 @@ let totalNumberOfQuestions = questions.length;
 function nextQuestion(currentQuestionIndex) {
     if (currentQuestionIndex < totalNumberOfQuestions) {
         loadQuestion(currentQuestionIndex);
-    } else if (currentQuestionIndex = totalNumberOfQuestions) {
+    } else if (currentQuestionIndex === totalNumberOfQuestions) {
         getFinalScore();
         modal.show();
     } else {
@@ -111,7 +111,6 @@ function updateProgressBar(questionNumber) {
     }
 }
 
-let currentQuestionIndex = 0;
 function runGame() {
     nextQuestion(0)
 }
