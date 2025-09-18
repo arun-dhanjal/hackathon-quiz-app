@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <title>Hackathon Quiz App</title>
+    <title>Quizathon</title>
 </head>
 
 <!-- Bootstrap classes applied to entire body element to center quiz container horizontally and vertically -->
@@ -22,9 +22,11 @@
         <div class="container text-center">
             <h1 class="mb-4">Quizathon!</h1>
             <div id="quiz-card" class="card p-3">
-                <!-- h1 element represents the question text -->
+                
+                <!-- Question text, gets updated via JS script -->
                 <h2 id="question">Question loading...</h2>
 
+                <!-- Answer options text, gets updated via JS script -->
                 <div id="answers" class="row justify-content-center mt-3">
                     <div class="text-start w-auto">
                         <ol>
@@ -36,7 +38,7 @@
                     </div>
                 </div>
 
-                <!-- 4 buttons that will each pull the appropriate question text from JS file -->
+                <!-- 4 answer buttons -->
                 <div class="container mt-3" id="answer-buttons">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-2">
                         <div class="col">
@@ -62,7 +64,7 @@
                     </div>
                 </div>
 
-                <!-- Score div with "score" span element, to be updated via JS file dependent on answer input -->
+                <!-- Question tracking through text and progress bar, gets updated via JS script-->
                 <div class="mt-3">
                     <p class="small mb-0">
                         Question: <span id="trackquestionnumber">0</span> of 5
@@ -74,6 +76,7 @@
                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                             aria-valuemax="5">
                         </div>
+
                         <!-- Progress bar segments with numbers -->
                         <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-around"
                             style="top: 0; left: 0; pointer-events: none">
@@ -85,6 +88,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Score div with "score" span element, gets updated via JS script dependent on answer input -->
                 <p>Score: <span id="score">0</span>/5</p>
             </div>
         </div>
