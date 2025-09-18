@@ -1,9 +1,8 @@
 // Setting DOM elements
 let questionElement = document.querySelector("#question");
 let answerElements = document.querySelectorAll(".answer");
-let scoreElement = document.getElementById('score');
 let progressBarElement = document.querySelector('.progress-bar');
-
+let trackQuestionNumberElement = document.getElementById('trackquestionnumber');
 // Set Questions
 let questions = [
     {
@@ -61,8 +60,8 @@ function loadQuestion(currentQuestionIndex) {
     let questionText = currentQuestion["question"];
     let answers = currentQuestion["choices"]
     
-    // Update score to show current question number
-    updateScoreNumber(currentQuestionIndex);
+    // Update question tracker to show current question number
+    updateQuestionTracker(currentQuestionIndex);
     
     questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
     let answerIndex = 0;
@@ -73,16 +72,16 @@ function loadQuestion(currentQuestionIndex) {
     }
 }
 
-function updateScoreNumber(currentQuestionIndex) {
-    const questionNumber = currentQuestionIndex + 1;
-    scoreElement.textContent = questionNumber;
+function updateQuestionTracker(currentQuestionIndex) {
+    let questionNumber = currentQuestionIndex + 1;
+    trackQuestionNumberElement.textContent = questionNumber;
     
     // Update progress bar based on Question Number
     updateProgressBar(questionNumber);
 }
 
-function updateProgressBar(score) {
-    switch(score) {
+function updateProgressBar(questionNumber) {
+    switch(questionNumber) {
         case 1:
             progressBarElement.style.width = '20%';
             progressBarElement.setAttribute('aria-valuenow', '1');
