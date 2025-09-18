@@ -15,7 +15,7 @@ ol {
 #quiz-card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border-color: #F08080;
+  border-color: #505050;
   background-color: white;
   color: #505050;
 }
@@ -25,6 +25,8 @@ ol {
 #answer-buttons * {
   font-weight: 500;
   color: #505050;
+  border-radius: 10px;
+  border-color: #505050;
 }
 #btnA {
   background-color: #cee7ca;
