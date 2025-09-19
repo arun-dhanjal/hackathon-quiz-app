@@ -1,5 +1,3 @@
-let buttonIDs = ["btnA", "btnB", "btnC", "btnD"];
-
 initialiseButtons();
 
 /* Get all buttons and add event listeners to them */
@@ -19,10 +17,23 @@ function addClickListener(item) {
 function buttonClicked(buttonID) {
     let result = globals.buttonIDs.indexOf(buttonID);
     checkAnswer(result);
-    nextQuestion(++currentQuestionIndex);
+    nextQuestion(++globals.currentQuestionIndex);
 }
 
 /*Check if the answer is correct */
 function checkAnswer(selectedAnswer) {
-    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) incrementScore();
+    resetAudio();
+    if (selectedAnswer === questions[globals.currentQuestionIndex]["answer"]) {
+        incrementScore();
+        globals.correctSound.play();
+    } else {
+        globals.wrongSound.play();
+    }
+}
+
+function resetAudio() {
+    globals.correctSound.pause();
+    globals.correctSound.currentTime = 0;
+    globals.wrongSound.pause();
+    globals.wrongSound.currentTime = 0;
 }
