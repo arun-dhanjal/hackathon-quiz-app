@@ -62,48 +62,98 @@ The app uses a palette of pastel primary colours in order to look inviting whils
 
 ### Typography
 
-Keeping in line with the subtle but friendly theme, the Quicksand font has been selected to be used throughout the application.
+Keeping in line with the subtle but friendly theme, the Quicksand font has been selected to be used throughout the application. If the Quicksand font isn't available for any users, a 'sans-serif' default font will activate instead.
 
 ### Page Layout
 
 Wireframes were created based on the initial design of the page layout for various screen sizes. The final deployed application has some minor changes/additions, for example the button layout on laptops is now horizontally lined up instead of in a grid layout,a progress bar has been added below the score buttons, and a replay button has been added to the modal. However, the overall design is still largely aligned with the initial wireframes. Wireframes shown below:
 
+#### Mobile Layout
 ![Wireframe 1](/readme-docs/mobile-layout.png)
+#### Mobile Layout (Modal)
 ![Wireframe 2](/readme-docs/mobile-modal.png)
+#### Tablet Layout
 ![Wireframe 3](/readme-docs/tablet-layout.png)
+#### Tablet Layout (Modal)
 ![Wireframe 4](/readme-docs/tablet-modal.png)
+#### Laptop Layout
 ![Wireframe 5](/readme-docs/laptop-layout.png)
+#### Laptop Layout (Modal)
 ![Wireframe 6](/readme-docs/laptop-modal.png)
 
 ### Features
 
-STILL TO BE UPDATED
+* App title:
 
-* Feature 1:
+  * A large title for the app to inform users of the app they are using - this is placed above and outside of the main quiz container.
 
-  * STILL TO BE UPDATED
+  ![App title](/readme-docs/title.png)
 
-  * STILL TO BE UPDATED
+* Question section:
 
-  ![Feature 1 screenshot](/readme-docs/feature-1)
+  * A question section comprising of two main parts: the actual question in larger text; and the four possible answers written in full.
 
-* Feature 2:
+  ![Questions section](/readme-docs/question.png)
 
-  * STILL TO BE UPDATED
+* Answer buttons:
 
-  * STILL TO BE UPDATED
+  * An arrangement of 4 buttons, with each corresponding to an answer from the question section above.
 
-  ![Feature 2 screenshot](/readme-docs/feature-2.jpg)
+  * Each button is coloured differently for visual separation.
+
+  * The arrangement of buttons changes on different device sizes: vertically stacked on mobile; grid layout on tablet; horizontally lined up on laptop and larger. These device sizes are based on the Bootstrap breakpoints.
+
+  ![Answer buttons](/readme-docs/buttons.png)
+
+* Quiz progression:
+
+  * Progression through the quiz is communicated in two ways: a question counter and a progress bar.
+
+  * Question counter shows progression through the quiz numerically.
+
+  * Progress bar shows progression through the quiz visually and numerically.
+
+  ![Quiz progression](/readme-docs/progress.png)
+
+* Score section:
+
+  * A score counter features below the progression area.
+
+  * The score counter updates as questions are answered, incrementing with each correct answer.
+
+  ![Score section](/readme-docs/score.png)
+
+* Feedback and replay:
+
+  * On completion of the quiz, a modal will pop up in the middle of the screen.
+
+  * This modal will contain a congratulatory message, with a title in larger text and feedback on the final score in smaller text.
+
+  * A green replay button features under this message: this allows for the user to try the quiz again from Question 1 with the score reset to 0.
+
+  ![Feedback and replay](/readme-docs/modal.png)
 
 * Future implementations:
 
-  * STILL TO BE UPDATED
+  * A larger question set could be implemented in the future to allow for extended gameplay.
+
+  * Immediate feedback after answering each question, e.g. correct answers being highlighted in green and incorrect answers being highlighted in red.
+
+  * A timer to restrict the duration of the quiz, adding an additional level of challenge.
+
+  * More keyboard input options, e.g. assigned the keyboard inputs of A, B, C, and D to the on-screen buttons in order to submit an answer.
 
 ### Accessibility
 
-STILL TO BE UPDATED
+Mindful development has been exercised throughout the project to ensure the app is as accessible and user-friendly as possible. This includes:
 
-(Natalie's comment): The tab, Alt tab and enter allow a user to participate without a mouse. Potential future release could be for the user to enter choice by pressing A B C D or Alt and the letter to select their choice on a keyboard
+* Using semantic HTML.
+
+* Ensuring that there is a sufficient colour contrast throughout the site.
+
+* Including appropriate aria labelling.
+
+* Allowing for some keyboard inputs in addition to mouse inputs (e.g. TAB and ENTER to select and submit an answer button).
 
 - - -
 
@@ -173,7 +223,23 @@ BELOW IMAGES STILL TO BE UPDATED
 - - -
 
 ## AI Usage
-STILL TO BE UPDATED
+AI has been used by each contributor during the development of this app, Microsoft Copilot for the most part. A few key points on the use of AI:
+
+* Used for the generation of some proof-of-concept code during initial project discussions.
+
+* Used to generate user stories, acceptance criteria, and tasks for the GitHub project board.
+
+* Used to generate the question and answer content implemented in the app.
+
+* Used as a means of learning and querying snippets of code during app development.
+
+Please note: although AI has been used extensively during the development of this app, any and all AI outputs have been scrutinised and considered carefully before being implemented. The team of contributors appreciates that AI is a tool to be used and not relied on without considered thought.
 
 ## Credits
-STILL TO BE UPDATED
+This app is the result of a joint effort from a team of contributors, including:
+
+* Amelia James (https://github.com/AmeliaBeep)
+* Natalie Gokkaya (https://github.com/NatGok)
+* Arun Dhanjal (https://github.com/arun-dhanjal)
+* Valery Carpentier (https://github.com/vcarpentier)
+* Mark Laban (https://github.com/marklaban36)
