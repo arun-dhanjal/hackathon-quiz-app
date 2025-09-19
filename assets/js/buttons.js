@@ -24,9 +24,11 @@ function buttonClicked(buttonID) {
 
 /*Check if the answer is correct */
 function checkAnswer(selectedAnswer) {
-    if (selectedAnswer === questions[globals.currentQuestionIndex]["answer"]) {
+    if (selectedAnswer === questions[currentQuestionIndex]["answer"]) {
         incrementScore();
         globals.correctSound.play();
-    }   else {
-        globals.wrongSound.play();}
+    } else {
+        globals.wrongSound.play();
+    }
+
 }
