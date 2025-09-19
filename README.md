@@ -1,8 +1,8 @@
-# Quizathon! website
+# Quizathon! app
 
-The Quizathon! website is designed to be a fun and easy-to-use quiz game with a colourful design, interactive features, real-time feedback, and replayability.
+The Quizathon! app is designed to be a fun and easy-to-use quiz game with a colourful design, interactive features, real-time feedback, and replayability.
 
-![Quizathon! website shown on a range of devices](/readme-docs/devices-showcase.png)
+![Quizathon! app shown on a range of devices](/readme-docs/devices-showcase.png)
 
 [View Quizathon! on Github Pages](https://arun-dhanjal.github.io/hackathon-quiz-app/)
 
@@ -32,7 +32,7 @@ The Quizathon! website is designed to be a fun and easy-to-use quiz game with a 
   * [Lighthouse: mobile](#Lighthouse-mobile)
   * [Lighthouse: desktop](#Lighthouse-desktop)
 
-* [AI Usage](#AI-Udage)
+* [AI Usage](#AI-Usage)
 
 * [Credits](#Credits)
 
@@ -42,11 +42,13 @@ The Quizathon! website is designed to be a fun and easy-to-use quiz game with a 
 
 ### Application Purpose
  
-xfghdgh
+The Quizathon! app has been created as part of a hackathon in order to showcase each team member's grasp of front-end programming languages as well as the capacity to work as a team and effectively use GitHub for collaboration.
 
 ### User Value
 
-dfghdf
+User stories with relevant acceptance criteria have been created to demonstrate the value that users would derive from using this app. Associated tasks have been assigned to each team member and have been managed throughout the project via a GitHub project board. Details on each user story, along with the acceptance criteria and assigned tasks can be found on the project board here:
+
+[GitHub Project Board](https://github.com/users/arun-dhanjal/projects/5)
 
 - - -
 
@@ -56,7 +58,7 @@ dfghdf
 
 ![Quizathon! Colour Palette](/readme-docs/Quizathon!%20palette.png)
 
-The website uses a palette of pastel primary colours in order to look inviting whilst not being too garish. A gradient background with coloured buttons on a white quiz area gives a splash of colour but keeps things from being too loud or causing eye strain. The colour palette was created using the [Coolors](https://coolors.co/) website.
+The app uses a palette of pastel primary colours in order to look inviting whilst not being too garish. A gradient background with coloured buttons on a white quiz area gives a splash of colour but keeps things from being too loud or causing eye strain. The colour palette was created using the [Coolors](https://coolors.co/) website.
 
 ### Typography
 
@@ -75,33 +77,33 @@ Wireframes were created based on the initial design of the page layout for vario
 
 ### Features
 
-dfjhgvokhfhdshdg
+STILL TO BE UPDATED
 
 * Feature 1:
 
-  * sdfgfsdgsdgfs
+  * STILL TO BE UPDATED
 
-  * alkjfhkjafhklas
+  * STILL TO BE UPDATED
 
   ![Feature 1 screenshot](/readme-docs/feature-1)
 
 * Feature 2:
 
-  * sdgfsdfg
+  * STILL TO BE UPDATED
 
-  * dfgsgfs
+  * STILL TO BE UPDATED
 
   ![Feature 2 screenshot](/readme-docs/feature-2.jpg)
 
 * Future implementations:
 
-  * fkshfkaksahj
+  * STILL TO BE UPDATED
 
 ### Accessibility
 
-skajhbfvjajha
+STILL TO BE UPDATED
 
-(Still to be edited): The tab, Alt tab and enter allow a user to participate without a mouse. Potential future release could be for the user to enter choice by pressing A B C D or Alt and the letter to select their choice on a keyboard
+(Natalie's comment): The tab, Alt tab and enter allow a user to participate without a mouse. Potential future release could be for the user to enter choice by pressing A B C D or Alt and the letter to select their choice on a keyboard
 
 - - -
 
@@ -109,13 +111,13 @@ skajhbfvjajha
 
 ### Languages Used
 
-HTML, CSS, and JavaScript were used to create this website.
+HTML, CSS, and JavaScript were used to create this app.
 
 ### Frameworks, Libraries & Programs Used
 
 Git - For version control.
 
-GitHub - To save and store the files for the website, as well as for collaborating with team members.
+GitHub - To save and store the files for the app, as well as for collaborating with team members.
 
 Bootstrap Version 5.3 - Code used mainly for the quiz container, buttons, progress bar, and modal. Additional CSS styling was also implemented in style.css.
 
@@ -123,13 +125,13 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 
 Microsoft Copilot - For code queries and resolution of coding issues.
 
-[Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
+[Am I Responsive?](http://ami.responsivedesign.is/) - To show the app image on a range of devices.
 
 - - -
 
 ## Deployment
 
-Github Pages was used to deploy the live website. The instructions to achieve this are below:
+Github Pages was used to deploy the live app. The instructions to achieve this are below:
 
 1. Log in to Github.
 2. Find the repository for this project: hackathon-quiz-app.
@@ -145,6 +147,8 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 Testing was ongoing throughout the entire build. Chrome developer tools was used while building to pinpoint and troubleshoot any issues as development progressed, as well as Microsoft Copilot to query specific coding logic queries.
 
 More comprehensive testing was carried out on completion of the build using dedicated validation software, as shown below.
+
+BELOW IMAGES STILL TO BE UPDATED
 
 ### W3C Validator: HTML
 
@@ -169,7 +173,7 @@ More comprehensive testing was carried out on completion of the build using dedi
 - - -
 
 ## AI Usage
-iahfkhwfkjshk
+STILL TO BE UPDATED
 
 ## Credits
-iahfkhwfkjshk
+STILL TO BE UPDATED
