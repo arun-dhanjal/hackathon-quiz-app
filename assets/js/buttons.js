@@ -3,7 +3,7 @@ initialiseButtons();
 /* Get all buttons and add event listeners to them */
 function initialiseButtons() {
     let buttons;
-    buttons = globals.buttonIDs.map(id => document.getElementById(id));
+    buttons = globals.buttonIDs.map((id) => document.getElementById(id));
     buttons.forEach(addClickListener);
 }
 
