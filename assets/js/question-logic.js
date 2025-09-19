@@ -1,8 +1,9 @@
 // Setting DOM elements
-let questionElement = document.querySelector("#question");
-let answerElements = document.querySelectorAll(".answer");
+let questionElement = document.querySelector('#question');
+let answerElements = document.querySelectorAll('.answer');
 let progressBarElement = document.querySelector('.progress-bar');
-let trackQuestionNumberElement = document.getElementById('trackquestionnumber');
+let trackQuestionNumberElement = document.getElementById('track-question-number');
+
 // Set Questions
 let questions = [
     {
@@ -43,7 +44,7 @@ let totalNumberOfQuestions = questions.length;
 function nextQuestion(currentQuestionIndex) {
     if (currentQuestionIndex < totalNumberOfQuestions) {
         loadQuestion(currentQuestionIndex);
-    } else if (currentQuestionIndex = totalNumberOfQuestions) {
+    } else if (currentQuestionIndex === totalNumberOfQuestions) {
         getFinalScore();
         modal.show();
     } else {
@@ -66,7 +67,7 @@ function loadQuestion(currentQuestionIndex) {
     // Update question tracker to show current question number
     updateQuestionTracker(currentQuestionIndex);
     
-    questionElement.innerHTML = `Question ${currentQuestionIndex+1}: ${questionText}`;
+    questionElement.innerHTML = `${questionText}`;
     let answerIndex = 0;
     let answerLetter = ["A", "B", "C", "D"]
     for (let answerElement of answerElements) {
@@ -111,7 +112,6 @@ function updateProgressBar(questionNumber) {
     }
 }
 
-let currentQuestionIndex = 0;
 function runGame() {
     nextQuestion(0)
 }
