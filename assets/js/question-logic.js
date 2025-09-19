@@ -69,7 +69,7 @@ function loadQuestion(currentQuestionIndex) {
     questionElement.innerHTML = `${questionText}`;
     let answerIndex = 0;
     let answerLetter = ["A", "B", "C", "D"];
-    for (answerElement of answerElements) {
+    for (var answerElement of answerElements) {
         answerElement.innerHTML = `${answerLetter[answerIndex]}: ${answers[answerIndex]}`;
         answerIndex++;
     }
@@ -112,6 +112,6 @@ function updateProgressBar(questionNumber) {
 }
 
 function runGame() {
-    nextQuestion(0)
+    nextQuestion(0);
 }
-runGame()
+runGame();
