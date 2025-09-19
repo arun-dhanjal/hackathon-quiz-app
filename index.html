@@ -103,21 +103,19 @@
     </main>
 
     <!-- Modal Container -->
-    <section> 
-        <div id="gameModal" class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body text-center">
-                        <h2>Congratulations!</h2>
-                        <p>You got <span id="final-score">x</span> questions correct!</p>
-                    </div>
-                    <div class="modal-footer justify-content-center">
-                        <button id="replay-button" type="button" class="btn btn-success">Replay</button>
-                    </div>
+    <div id="game-modal" class="modal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <h2>Congratulations!</h2>
+                    <p>You got <span id="final-score">x</span> questions correct!</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button id="replay-button" type="button" class="btn btn-success">Replay</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -1,4 +1,4 @@
-let modal = new bootstrap.Modal(document.getElementById("gameModal"));
+let modal = new bootstrap.Modal(document.getElementById("game-modal"));
 let replayButton = document.getElementById("replay-button");
 
 function getFinalScore () {
