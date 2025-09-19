@@ -1,7 +1,6 @@
 /* Background styling */
 body {
   color: #505050;
-  /*background-color: #E6E6FA;*/
   background-image: linear-gradient(180deg, #B6E9FF 50%, #BEE5B0 );
   font-family: "Quicksand", sans-serif;
 }
