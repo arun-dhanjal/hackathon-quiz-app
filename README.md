@@ -208,31 +208,29 @@ Testing was ongoing throughout the entire development process. Browser developer
 
 More comprehensive testing was carried out on completion of the build using dedicated validation software, as shown below.
 
-BELOW IMAGES STILL TO BE UPDATED
-
 ### W3C Validator: HTML
 
-![HTML validation screenshot](/readme-docs/html-validation.jpg)
+![HTML validation screenshot](/readme-docs/html-validation.png)
 
 ### W3C Validator: CSS
 
-![CSS validaton screenshot](/readme-docs/css-validation.jpg)
+![CSS validation screenshot](/readme-docs/css-validation.png)
 
 ### JSHint: JavaScript
 
-![JS validation screenshot](/readme-docs/JS-validation.jpg)
+![JS validation screenshot](/readme-docs/jshint.png)
 
 ### WAVE: Web Accessibility Evaluation Tool
 
-![WAVE validation](/readme-docs/WAVE-validation.jpg)
+![WAVE validation](/readme-docs/wave.png)
 
-### Lighthouse: mobile
+### Lighthouse: Mobile
 
-![Lighthouse mobile validation screenshot](/readme-docs/lighthouse-mobile-validation.jpg)
+![Lighthouse mobile validation screenshot](/readme-docs/lighthouse-mobile.png)
 
-### Lighthouse: desktop
+### Lighthouse: Desktop
 
-![Lighthouse desktop validation screenshot](/readme-docs/lighthouse-desktop-validation.jpg)
+![Lighthouse desktop validation screenshot](/readme-docs/lighthouse-desktop.png)
 
 - - -
 
