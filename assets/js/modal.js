@@ -2,7 +2,7 @@ let modal = new bootstrap.Modal(document.getElementById("gameModal"));
 let replayButton = document.getElementById("replayButton");
 
 function getFinalScore () {
-    document.getElementById("finalScore").innerText = `${globals.score}/${totalNumberOfQuestions}`;
+    document.getElementById("final-score").innerText = `${globals.score}/${totalNumberOfQuestions}`;
 };
 
 function replayGame() {

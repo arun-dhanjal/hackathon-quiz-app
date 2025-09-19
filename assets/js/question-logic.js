@@ -1,8 +1,9 @@
 // Setting DOM elements
-let questionElement = document.querySelector("#question");
-let answerElements = document.querySelectorAll(".answer");
+let questionElement = document.querySelector('#question');
+let answerElements = document.querySelectorAll('.answer');
 let progressBarElement = document.querySelector('.progress-bar');
-let trackQuestionNumberElement = document.getElementById('trackquestionnumber');
+let trackQuestionNumberElement = document.getElementById('track-question-number');
+
 // Set Questions
 let questions = [
     {
