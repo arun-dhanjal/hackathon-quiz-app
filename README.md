@@ -42,7 +42,7 @@ The Quizathon! app is designed to be a fun and easy-to-use quiz game with a colo
 
 ### Application Purpose
  
-The Quizathon! app has been created as part of a hackathon in order to showcase each team member's grasp of front-end programming languages as well as the capacity to work as a team and effectively use GitHub for collaboration.
+The Quizathon! app has been created as part of a hackathon in order to showcase each team member's grasp of front-end programming languages (HTML, CSS, JavaScript) as well as the capacity to work as a team and effectively use GitHub for collaboration.
 
 ### User Value
 
@@ -103,6 +103,8 @@ Wireframes were created based on the initial design of the page layout for vario
 
   * The arrangement of buttons changes on different device sizes: vertically stacked on mobile; grid layout on tablet; horizontally lined up on laptop and larger. These device sizes are based on the Bootstrap breakpoints.
 
+  * A unique sound will play dependent on whether the correct or incorrect answer button has been submitted.
+
   ![Answer buttons](/readme-docs/buttons.png)
 
 * Quiz progression:
@@ -151,6 +153,10 @@ Mindful development has been exercised throughout the project to ensure the app 
 
 * Ensuring that there is a sufficient colour contrast throughout the site.
 
+* Ensured good visual separation of buttons by using different colours.
+
+* Ensured clickable inputs are appropriately sized for ease of use.
+
 * Including appropriate aria labelling.
 
 * Allowing for some keyboard inputs in addition to mouse inputs (e.g. TAB and ENTER to select and submit an answer button).
@@ -171,9 +177,13 @@ GitHub - To save and store the files for the app, as well as for collaborating w
 
 Bootstrap Version 5.3 - Code used mainly for the quiz container, buttons, progress bar, and modal. Additional CSS styling was also implemented in style.css.
 
-Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+Browser Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+Microsoft PowerPoint - To create the initial wireframes.
 
 Microsoft Copilot - For code queries and resolution of coding issues.
+
+OpenAI ChatGPT - For code queries and resolution of coding issues.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) - To show the app image on a range of devices.
 
@@ -194,7 +204,7 @@ Github Pages was used to deploy the live app. The instructions to achieve this a
 
 ## Testing
 
-Testing was ongoing throughout the entire build. Chrome developer tools was used while building to pinpoint and troubleshoot any issues as development progressed, as well as Microsoft Copilot to query specific coding logic queries.
+Testing was ongoing throughout the entire development process. Browser developer tools were used while building to pinpoint and troubleshoot any issues as development progressed, as well as Microsoft Copilot/OpenAI ChatGPT to query specific coding logic queries.
 
 More comprehensive testing was carried out on completion of the build using dedicated validation software, as shown below.
 
@@ -212,6 +222,10 @@ BELOW IMAGES STILL TO BE UPDATED
 
 ![JS validation screenshot](/readme-docs/JS-validation.jpg)
 
+### WAVE: Web Accessibility Evaluation Tool
+
+![WAVE validation](/readme-docs/WAVE-validation.jpg)
+
 ### Lighthouse: mobile
 
 ![Lighthouse mobile validation screenshot](/readme-docs/lighthouse-mobile-validation.jpg)
@@ -225,21 +239,28 @@ BELOW IMAGES STILL TO BE UPDATED
 ## AI Usage
 AI has been used by each contributor during the development of this app, Microsoft Copilot for the most part. A few key points on the use of AI:
 
-* Used for the generation of some proof-of-concept code during initial project discussions.
-
 * Used to generate user stories, acceptance criteria, and tasks for the GitHub project board.
 
 * Used to generate the question and answer content implemented in the app.
 
 * Used as a means of learning and querying snippets of code during app development.
 
-Please note: although AI has been used extensively during the development of this app, any and all AI outputs have been scrutinised and considered carefully before being implemented. The team of contributors appreciates that AI is a tool to be used and not relied on without considered thought.
+Please note: although AI has been utilised during the development of this app, any and all AI outputs have been scrutinised and considered carefully before being implemented. The team of contributors appreciates that AI is a tool to be used and not relied on without complete understanding of the output.
 
 ## Credits
-This app is the result of a joint effort from a team of contributors, including:
+### Content
 
-* Amelia James (https://github.com/AmeliaBeep)
-* Natalie Gokkaya (https://github.com/NatGok)
-* Arun Dhanjal (https://github.com/arun-dhanjal)
-* Valery Carpentier (https://github.com/vcarpentier)
-* Mark Laban (https://github.com/marklaban36)
+The audio clips for the buttons were sourced from the Pixabay: https://pixabay.com/
+
+The favicons were sourced from: https://favicon.io/
+
+### Contributors
+This app is the result of collaboration between a team of contributors, including:
+
+* Amelia James - https://github.com/AmeliaBeep
+* Natalie Gokkaya - https://github.com/NatGok
+* Arun Dhanjal - https://github.com/arun-dhanjal
+* Valery Carpentier - https://github.com/vcarpentier
+* Mark Laban - https://github.com/marklaban36
+
+
